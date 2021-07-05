@@ -1,0 +1,96 @@
+h2 {
+    font-size: 1.7rem;
+}
+
+h4 {
+    line-height: 40px;
+    letter-spacing: 1px;
+    font-size: 1.7rem;
+}
+
+p {
+    line-height: 20px;
+    font-size: 1rem;
+}
+
+.testimonials-container {
+    height: 100%;
+    width: 80vw;
+    margin: 3% auto;
+}
+
+.head {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.testimonial-cards {
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.tcard {
+    width: 330px;
+    padding: 1rem;
+    position: relative;
+    margin-top: 15%;
+    background: #fffffffa;
+    box-shadow: 0 5px 10px 0 #0000005e;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+.tcard:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.timage {
+    position: absolute;
+    top: -25%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.timage img {
+    box-shadow: 0 0px 5px 0px #00000094;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.tcard-text {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.tcard .social-media {
+    margin: 10px auto 0 auto;
+    display: flex;
+    width: 70%;
+    cursor: pointer;
+}

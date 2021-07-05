@@ -1,0 +1,23 @@
+    .img-container {
+        margin: 30px 50px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .gallery {
+        margin: 30px 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .gallery img {
+        width: 200px;
+        padding: 20px;
+    }
+    
+    .odd {
+        width: 230px;
+        height: 200px;
+    }

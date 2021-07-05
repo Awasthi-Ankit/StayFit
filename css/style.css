@@ -1,0 +1,552 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =====================variables========================= */
+
+:root {
+    --primary: #107896;
+    --secondory: #ffffff;
+}
+
+
+/* ==============================tag styling========================= */
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondory);
+}
+
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--primary);
+    font-family: Roboto;
+}
+
+h1 {
+    font-family: Roboto;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+    color: var(--primary);
+    letter-spacing: 3px;
+}
+
+h3 {
+    font-size: 1rem;
+    color: var(--secondory);
+    font-family: Roboto;
+    letter-spacing: 02px;
+    text-transform: uppercase;
+}
+
+
+/* =======================universal class definition================== */
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.btn-2 {
+    width: 60px;
+    padding: 5px;
+    border: 2px solid var(--primary);
+    background-color: var(--secondory);
+    text-transform: uppercase;
+    color: var(--primary);
+    margin: 15px 0;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.active {
+    border-bottom: 2px solid #ffffff;
+}
+
+
+/* =======================navigation part=========================== */
+
+.container {
+    width: 100%;
+    background-color: var(--primary);
+    border-bottom: 1px solid var(--secondory);
+}
+
+.nav-bar {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: cornflowerblue; */
+}
+
+.nav-ul {
+    list-style: none;
+    margin-right: 11%;
+    width: 42%;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 1px;
+}
+
+.logo {
+    margin-left: 20px;
+    width: 80px;
+    height: 70px;
+    /* background-color: black; */
+}
+
+.items {
+    /* margin-left: 10px; */
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    margin: 0 20px 0 20px;
+    font-weight: bold;
+}
+
+.items:hover,
+a:hover {
+    transition: 0.1s ease-in-out;
+    -webkit-transition: 0.1s ease-in-out;
+    -moz-transition: 0.1s ease-in-out;
+    -ms-transition: 0.1s ease-in-out;
+    -o-transition: 0.1s ease-in-out;
+    transform: scale(1.19);
+    -webkit-transform: scale(1.19);
+    -moz-transform: scale(1.19);
+    -ms-transform: scale(1.19);
+    -o-transform: scale(1.19);
+}
+
+.welcome {
+    /* background-color: red; */
+    display: flex;
+    margin: 50px 0;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.welcome-text-wraper {
+    /* background-color: green; */
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* width: 550px; */
+    text-align: justify;
+    letter-spacing: 1px;
+    color: #107896;
+}
+
+.welcome-text {
+    color: #000000;
+    width: 80%;
+}
+
+.btn-1 {
+    width: 9rem;
+    padding: 0.7rem;
+    margin: 20px 0;
+    text-transform: uppercase;
+    background-color: var(--secondory);
+    border: 2px solid var(--primary);
+    font-weight: 600;
+    color: var(--primary);
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+.btn-1:hover {
+    color: var(--secondory);
+    background-color: #107896;
+}
+
+.welcome-image-wraper {
+    /* background-color: darkgreen; */
+    height: 600px;
+    margin-left: 3%;
+}
+
+.welcome-image {
+    height: 100%;
+}
+
+
+/* =============================white cards=========================== */
+
+.white-card-container {
+    background-color: #f8f9fc;
+    padding: 100px 0;
+    margin: 170px 0px;
+}
+
+.white-cards {
+    /* background-color: blue; */
+    height: 100%;
+    width: 66%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.white-card {
+    /* background-color: green; */
+    width: 300px;
+    margin: 50px 2%;
+    padding-left: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    /* border-left: 1px solid #1b0de03b; */
+}
+
+.owner {
+    display: block;
+    font-size: 1.3rem;
+}
+
+.white-card h2 {
+    margin-bottom: 7px;
+    font-size: 1.4rem;
+    border-bottom: 2px solid var(--primary);
+    /* text-shadow: 0px 0px 3px #5afff7; */
+}
+
+.white-card p {
+    text-align: justify;
+    font-size: 0.95rem;
+    color: #000000;
+}
+
+
+/* =========================my section================================= */
+
+.my-section {
+    /* background-color: red; */
+    margin: 120px 0;
+}
+
+.my-container {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    /* background-color: blueviolet; */
+}
+
+.my-description {
+    width: 30%;
+    margin-left: 45px;
+    /* background-color: red; */
+}
+
+.nikki {
+    /* background-color: red; */
+    box-shadow: -150px 30px 0 0 var(--primary);
+}
+
+
+/* =============================contact trainers================================ */
+
+footer h1 {
+    color: var(--secondory);
+    font-size: 1.2rem;
+}
+
+.trainers {
+    margin: auto 0;
+    width: 20%;
+    text-align: center;
+}
+
+.t-names {
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
+
+footer div a {
+    margin: 0 3px;
+}
+
+
+/*=========================== footer ============================= */
+
+footer {
+    background-color: var(--primary);
+}
+
+.footer-wrap {
+    /* background-color: red; */
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+}
+
+.footer-area {
+    padding: 1rem;
+}
+
+.social-media {
+    margin-bottom: 0.5rem;
+    width: 50%;
+    justify-content: space-around;
+    font-size: 1.5rem;
+}
+
+.social-media a:hover {
+    color: #1DA1F2;
+}
+
+.social-logo {
+    transition: 0.3s all ease-in;
+    -webkit-transition: 0.3s all ease-in;
+    -moz-transition: 0.3s all ease-in;
+    -ms-transition: 0.3s all ease-in;
+    -o-transition: 0.3s all ease-in;
+}
+
+.social-logo:hover {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+}
+
+.footer-text {
+    margin-bottom: 0.5rem;
+    font-size: 0.75rem;
+    color: var(--secondory);
+}
+
+.copyright-text {
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+
+/* ==========================================media q============================================ */
+
+
+/* =====================1256========================== */
+
+@media screen and (max-width: 1256px) {
+    .welcome-image-wraper {
+        height: 400px;
+    }
+    .welcome-text-wraper h1 {
+        font-size: 2rem;
+    }
+    .welcome-text-wraper p {
+        font-size: 0.9rem;
+        width: 90%;
+        font-weight: 600;
+    }
+    .my-description {
+        width: 40%;
+        margin-left: 0px;
+    }
+    .nikki {
+        /* background-color: red; */
+        box-shadow: -100px 20px 0 0 var(--primary);
+    }
+}
+
+
+/* ======================1090===================== */
+
+@media screen and (max-width: 1090px) {
+    .welcome {
+        margin: 0;
+        background-color: var(--primary);
+        flex-direction: column;
+    }
+    .welcome-text-wraper h1 {
+        font-size: 2rem;
+        color: var(--secondory);
+    }
+    .welcome-text-wraper p {
+        width: 100%;
+        text-align: justify;
+    }
+    .welcome-text-wraper {
+        /* background-color: red; */
+        width: 80%;
+        margin: 0 auto;
+    }
+    .white-cards {
+        /* background-color: blue; */
+        /* width: 70%; */
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .white-cards h2 {
+        font-size: 1rem;
+    }
+    .white-card {
+        /* background-color: green; */
+        margin: 30px 10px;
+        padding-left: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        min-width: 200px;
+        width: 30%;
+    }
+    .my-description h1 {
+        font-size: 2rem;
+    }
+    .my-description p {
+        font-size: 0.9rem;
+    }
+    .nikki {
+        box-shadow: -95px 20px 0 0 var(--primary);
+    }
+    .my-description {
+        width: 40%;
+        margin-left: 0px;
+    }
+}
+
+
+/* =======================900=============== */
+
+@media screen and (max-width: 900px) {
+    .my-container {
+        width: 90%;
+        align-items: center;
+    }
+    .nikki {
+        box-shadow: -55px 20px 0 0 var(--primary);
+    }
+    .footer-wrap {
+        flex-direction: column;
+    }
+    .trainers {
+        display: none;
+    }
+    .footer-wrap {
+        width: 100%;
+    }
+    /* form {
+        margin: 0 auto;
+        width: 80%;
+    } */
+    .contact-form {
+        margin: 0 auto;
+        width: 80%;
+    }
+    .footer-low {
+        background-color: #1c5768;
+        width: 100%;
+    }
+}
+
+
+/* =====================630================= */
+
+@media screen and (max-width: 630px) {
+    .welcome {
+        min-height: 50vh;
+        background: url("./assets/smalll.png") no-repeat;
+        box-shadow: inset 0 0 0 1000px #076883e1;
+        /* height: 50vh; */
+    }
+    .welcome h1 {
+        font-size: 1.6rem;
+    }
+    .welcome p {
+        font-size: 0.8rem;
+    }
+    .container {
+        width: 100%;
+        background-color: var(--primary);
+        border-bottom: 1px solid var(--secondory);
+    }
+    .welcome-image-wraper {
+        /* background-color: darkgreen; */
+        display: none;
+    }
+    .welcome-text-wraper {
+        text-align: left;
+        width: 100%;
+    }
+    .nav-bar {
+        width: 100%;
+        margin: 0 auto;
+        /* background-color: aqua; */
+    }
+    .nav-items {
+        /* background-color: red; */
+        justify-content: space-between;
+        font-size: 0.6rem;
+    }
+    .nav-ul {
+        margin-right: 0;
+        width: 100%;
+        justify-content: flex-end;
+        letter-spacing: none;
+        /* background-color: chartreuse; */
+    }
+    .logo {
+        margin-left: 10px;
+        width: 12%;
+        height: 25%;
+        /* background-color: black; */
+    }
+    .items {
+        font-size: 0.8rem;
+        margin: 0 1% 0 1%;
+    }
+    .my-container {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    .my-description h1 {
+        font-size: 1.7rem;
+        margin-top: 20px;
+    }
+    .nikki {
+        box-shadow: -20px 5px 0 0 var(--primary);
+    }
+    .my-description {
+        width: 70%;
+        margin-left: 0px;
+    }
+    .welcome .btn-1 {
+        background: inherit;
+        border: 2px solid var(--secondory);
+        color: var(--secondory);
+        width: 25%;
+        font-size: 0.6rem;
+        padding: 4px;
+    }
+}

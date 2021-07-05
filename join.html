@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stay Fit</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/join.css">
+</head>
+
+<body>
+
+    <!-- navigation bar -->
+    <div class="container">
+        <nav class="nav-bar">
+            <div class="nav-items">
+                <img src="./assets/icon.png" class="logo" alt="">
+                <ul class="nav-ul">
+                    <li class="items"><a href="./index.html">Home</a></li>
+                    <li class="items active"><a href="./app.js">join</a></li>
+                    <li class="items"><a href="./photos.html">Photos</a></li>
+                    <li class="items"><a href="./testimonials.html">testimonials</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <main>
+        <div class="join-container">
+            <div class="join-head">
+                <div class="join-info">
+                    <h2 class="head-anim"><i class="far fa-plus-square"></i> become a member of stayfit club</h2>
+                    <div class="image-box">
+
+                        <img src="./assets/join-image.jfif" alt="" class="join-image">
+                        <h3>lets start building a healthy life</h3>
+                    </div>
+                </div>
+                <div class="join-form">
+
+                    <form action="" id="form">
+                        <div class="form-part">
+                            <label for="">Full Name</label>
+                            <input type="text" placeholder="Name" id="name">
+                            <small>Error message</small>
+                        </div>
+                        <div class="form-part">
+                            <label for="">Age</label>
+                            <input type="number" placeholder="16" id="age">
+                            <small>Error message</small>
+                        </div>
+                        <div class="form-part">
+                            <label for="">Contact</label>
+                            <input type="number" placeholder="phone number" id="contact">
+                            <small>Error message</small>
+                        </div>
+                        <div class="form-part">
+                            <label for="">E-mail</label>
+                            <input type="text" placeholder="mail" id="email">
+                            <small>Error message</small>
+                        </div>
+                        <div class="form-part">
+                            <label for="">Address</label>
+                            <input type="text" placeholder="Current address">
+                        </div>
+                        <div class="form-part radios">
+                            <span><input type="radio" name="gender">Male</span>
+                            <span><input type="radio" name="gender">Female</span>
+                            <span><input type="radio" name="gender">Others</span>
+                        </div>
+                        <!-- <div class="form-part">
+                            <textarea name="reference" id="" cols="10" rows="10">Who told you about stay fit</textarea>
+                        </div> -->
+                        <div class="form-part">
+                            <input type="submit" class="btn-1">
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+
+    <!-- footer with contact form -->
+    <footer class="flex-center flex-column">
+        <!-- inner footer container of all elements -->
+        <div class="footer-wrap ">
+
+            <!-- social media and copyright section -->
+            <div class="footer-low flex-center flex-column">
+                <div class="footer-area flex-center flex-column">
+                    <div class="social-media flex-center">
+                        <div class="social-logo">
+                            <a href="">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </div>
+
+                        <div class="social-logo">
+                            <a href="">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+
+                        <div class="social-logo">
+                            <a href="">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="footer-text flex-center flex-column">
+                        <p class="copyright-text">Open source Resources used in project</p>
+                        <p class="copyright-text">Lightbox Library | Unsplash | Pexels | Google fonts | Fontawesome</p>
+                        <p class="copyright-text">open source semester project STAY FIT 2021 </p>
+                        <p class="copyright-text">by Ankit Awasthi MCA student at PCTE</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </footer>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+    <script src="./js/app.js"></script>
+    <script>
+        gsap.from(".image-box", {
+            opacity: 0,
+            duration: 1,
+            y: -50,
+            delay: 0
+        });
+        gsap.from(".head-anim", {
+            opacity: 0,
+            duration: 1,
+            y: -50,
+            delay: 0.5,
+            ease: "bounce.out"
+        });
+    </script>
+
+
+</body>
+
+</html>
