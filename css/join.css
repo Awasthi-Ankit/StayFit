@@ -3,9 +3,7 @@
 }
 
 :root {
-    --primary: #107896;
-    --secondory: #ffffff;
-    --join-text: #154e749f;
+    --join-text: #686868b6;
     --success-color: #2ecc71;
     --error-color: #e74c3c;
 }
@@ -70,16 +68,6 @@ input {
 
 span input {
     width: 20px;
-}
-
-textarea {
-    max-width: 100%;
-    outline: none;
-    border: 2px solid var(--primary);
-    border-radius: 3px;
-    padding: 10px;
-    font-family: Roboto;
-    font-weight: 200;
 }
 
 .radios {
