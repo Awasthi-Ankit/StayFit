@@ -35,12 +35,12 @@ p {
 }
 
 .tcard {
-    width: 330px;
+    width: 300px;
     padding: 1rem;
     position: relative;
-    margin-top: 15%;
+    margin-top: 10%;
     background: #fffffffa;
-    box-shadow: 0 5px 10px 0 #0000005e;
+    box-shadow: 0 3px 8px 1px #0000005e;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
