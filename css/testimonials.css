@@ -98,6 +98,43 @@ p {
     cursor: pointer;
 }
 
+form {
+    border-radius: 7px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 400px;
+    margin: 0 auto;
+    box-shadow: 0px 2px 10px 2px #ada6a671;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+
+.form-part {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 5px 0;
+}
+
+input {
+    padding: 7px;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 3px;
+    outline: none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+textarea {
+    padding: 7px;
+}
+
 @media screen and (max-width: 1210px) {
     .head {
         width: 100%;
