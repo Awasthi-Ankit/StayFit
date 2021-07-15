@@ -111,3 +111,28 @@ small {
 .form-part.error small {
     visibility: visible;
 }
+
+@media screen and (max-width: 1090px) {
+    .join-container {
+        width: 90vw;
+        margin: 1rem auto;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .join-container {
+        width: 100vw;
+        margin: 1rem auto;
+    }
+    .join-info .image-box {
+        display: none;
+    }
+    .join-head {
+        display: block;
+    }
+    .join-info {
+        font-size: 1rem;
+        max-width: 50%;
+        margin: 20px auto;
+    }
+}
