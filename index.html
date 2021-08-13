@@ -13,23 +13,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
     <!-- navigation bar -->
-    <div class="container">
+    <div class="container  fixed">
         <nav class="nav-bar">
-            <div class="nav-items">
-                <img src="./assets/icon.png" class="logo" alt="">
-                <ul class="nav-ul">
-                    <li class="items active"><a href="./index.html">Home</a></li>
-                    <li class="items"><a href="./join.html">join</a></li>
-                    <li class="items"><a href="./photos.html">Photos</a></li>
-                    <li class="items"><a href="./testimonials.html">testimonials</a></li>
 
-                </ul>
-            </div>
+            <img src="./assets/icon.png" class="logo" alt="">
+            <li class="menu-bar"><i class="fas fa-bars"></i></li>
+            <ul class="nav-ul">
+                <li class="items active"><a href="./index.html">Home</a></li>
+                <li class="items"><a href="./join.html">join</a></li>
+                <li class="items"><a href="./photos.html">Photos</a></li>
+                <li class="items"><a href="./testimonials.html">testimonials</a></li>
+
+
+            </ul>
+
         </nav>
     </div>
 
@@ -167,30 +170,8 @@
         </div>
     </footer>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+    <script src="./js/home.js"></script>
     <script src="./js/app.js"></script>
-    <script>
-        gsap.from(".welcome-image-wraper", {
-            opacity: 0,
-            duration: 1,
-            x: -100,
-            delay: 0.5
-        });
-        gsap.from(".welcome-text-wraper", {
-            opacity: 0,
-            duration: 1,
-            y: -50,
-            delay: 0,
-
-        });
-
-        let tl = gsap.timeline({
-            scrollTrigger: {
-                trigger: ".my-section"
-            }
-
-        });
-    </script>
-
 </body>
 
 </html>
