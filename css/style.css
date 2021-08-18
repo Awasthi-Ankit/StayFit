@@ -253,26 +253,24 @@ hr {
 /* =========================my section================================= */
 
 .my-section {
-    /* background-color: red; */
-    margin: 120px 0;
+    padding: 5% 12%;
 }
 
 .my-container {
     display: flex;
-    width: 70%;
     justify-content: space-between;
-    /* background-color: blueviolet; */
 }
 
 .my-description {
     width: 30%;
     margin-left: 45px;
-    /* background-color: red; */
 }
 
 .nikki {
     /* background-color: red; */
-    box-shadow: -150px 30px 0 0 var(--primary);
+    width: 270px;
+    height: 400px;
+    box-shadow: -100px 30px 0 0 #2F2E41;
 }
 
 
@@ -302,41 +300,31 @@ footer div a {
 /*=========================== footer ============================= */
 
 footer {
-    background-color: var(--primary);
+    background-color: #0c0c0c;
+    position: relative;
 }
 
 .footer-wrap {
-    /* background-color: red; */
     display: flex;
-    width: 70%;
+    flex-direction: column;
     justify-content: space-around;
-}
-
-.footer-area {
-    padding: 1rem;
+    align-items: center;
 }
 
 .social-media {
-    margin-bottom: 0.5rem;
-    width: 50%;
-    justify-content: space-around;
+    margin: 0.5rem;
     font-size: 1.5rem;
 }
 
-.social-logo {
-    transition: 0.3s all ease-in;
-    -webkit-transition: 0.3s all ease-in;
-    -moz-transition: 0.3s all ease-in;
-    -ms-transition: 0.3s all ease-in;
-    -o-transition: 0.3s all ease-in;
+.f-icon {
+    padding: 0 1rem;
 }
 
 .footer-text {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 200;
-    margin-bottom: 0.5rem;
-    font-size: 0.75rem;
+    margin-bottom: 1rem;
     color: var(--secondary);
+    line-height: 2;
 }
 
 .copyright-text {
@@ -424,6 +412,9 @@ footer {
         padding-left: 0.5rem;
         width: 28%;
     }
+    .my-section {
+        padding: 2% 3%;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -459,6 +450,23 @@ footer {
         padding-left: 0;
         width: 42%;
     }
+    .my-section {
+        padding: 2% 2%;
+    }
+    .my-container {
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+    }
+    .my-description {
+        width: 50%;
+        margin-left: 45px;
+    }
+    .nikki {
+        /* background-color: red; */
+        width: 200px;
+        height: 300px;
+        box-shadow: none;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -485,5 +493,23 @@ footer {
         display: block;
         width: 80px;
         margin: -60px auto 10px auto;
+    }
+    .my-container {
+        padding: 50px 0;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .my-description {
+        width: 90%;
+        margin-left: 0;
+    }
+    .nikki {
+        width: 320px;
+        height: 450px;
+        margin-bottom: 1.5rem;
+    }
+    .my-description p {
+        line-height: 2;
+        padding-bottom: 10px;
     }
 }
