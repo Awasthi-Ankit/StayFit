@@ -1,66 +1,41 @@
-h2 {
-    margin-top: 0px;
-    font-size: 1.7rem;
-}
-
 h4 {
-    line-height: 40px;
     letter-spacing: 1px;
     font-size: 1.7rem;
+    font-weight: bold;
 }
 
 p {
-    line-height: 20px;
     font-size: 1rem;
 }
 
 .testimonials-container {
-    height: 100%;
-    width: 80vw;
-    margin: 2% auto;
-}
-
-.head {
-    width: 50%;
-    margin: 0 auto;
-    text-align: center;
+    padding: 0 12%;
 }
 
 .testimonial-cards {
-    padding: 2rem;
-    width: 100%;
+    padding: 120px 0 2rem 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    margin-bottom: 100px;
 }
 
 .tcard {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 6rem;
     width: 300px;
     padding: 1rem;
     position: relative;
-    margin-top: 10%;
-    background: #fffffffa;
-    box-shadow: 0 3px 8px 1px #0000005e;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+    background: rgb(43, 43, 43);
+    background: radial-gradient(circle, rgba(43, 43, 43, 1) 0%, rgba(31, 31, 31, 1) 46%, rgba(16, 16, 16, 1) 100%);
+    box-shadow: 0 3px 8px 5px #0000005e;
+    border-radius: 5px;
     transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -o-transition: all 0.5s;
 }
 
 .tcard:hover {
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .timage {
@@ -68,83 +43,48 @@ p {
     top: -25%;
     left: 50%;
     transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
 }
 
 .timage img {
-    box-shadow: 0 0px 5px 0px #00000094;
+    box-shadow: 0 0px 0px 5px #ffffff;
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
 }
 
 .tcard-text {
+    color: white;
     margin: 30px 0 10px 0;
     text-align: center;
 }
 
-.tcard .social-media {
-    margin: 0 auto 0 auto;
+.social-link {
+    color: #e6e6e6;
     padding: 10px;
     display: flex;
-    width: 70%;
     cursor: pointer;
+    justify-content: space-around;
+    font-size: 1.5rem;
 }
 
-form {
-    border-radius: 7px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 400px;
-    margin: 0 auto;
-    box-shadow: 0px 2px 10px 2px #ada6a671;
-    -webkit-border-radius: 7px;
-    -moz-border-radius: 7px;
-    -ms-border-radius: 7px;
-    -o-border-radius: 7px;
-}
-
-.form-part {
-    display: flex;
-    flex-direction: column;
-    margin: 0 0 5px 0;
-}
-
-input {
-    padding: 7px;
-    width: 100%;
-    border: 2px solid black;
-    border-radius: 3px;
-    outline: none;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px;
-}
-
-textarea {
-    padding: 7px;
-}
-
-@media screen and (max-width: 1210px) {
-    .head {
-        width: 100%;
-        margin: 0 auto;
-        text-align: center;
+@media screen and (max-width: 1024px) {
+    .testimonials-container {
+        padding: 0 2%;
     }
     .tcard {
-        width: 350px;
-        padding: 1rem;
-        height: 300px;
-        margin: 50px 5px 50px 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .testimonials-container {
+        padding: 0 2%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .tcard {
+        width: 90%;
     }
 }
