@@ -9,6 +9,7 @@ p {
 }
 
 .testimonials-container {
+    min-height: 100vh;
     padding: 0 12%;
 }
 

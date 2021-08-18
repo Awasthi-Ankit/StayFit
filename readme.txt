@@ -1,7 +1,21 @@
-tools and technologies used
+Project stayfit a fitness club website 
+HTML/CSS/JS
 
-unsplash and pexels form images
-fontawesome for icons
-googlefonts for fonts
-lightrbox.js js library 
-gsap js library for animations
+
+
+
+tools and technologies used
+images
+unsplash and pexels 
+
+icons
+fontawesome icons
+
+fonts
+googlefonts 
+
+Javascript libraries
+lightebox.js
+gsap js
+
+
