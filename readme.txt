@@ -19,3 +19,4 @@ lightebox.js
 gsap js
 
 Hello Ankit update deployment link
+View Deployment here :- https://awasthi-ankit.github.io/StayFit/
